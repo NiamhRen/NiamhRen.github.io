@@ -2,12 +2,45 @@
     list-style-type: none;
    }
    ul li {
+    position: relative;
     display: inline;
     border: none;
     text-decoration: underline;
     text-align: center;
+    font-weight: bold;
     width: 150px;
     list-style-type: none;
     padding: 35px 35px 35px 35px;
-    margin-top: 0
+    margin-top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     }
+
+
+nav ul{
+    display: flex;
+    justify-content: flex-center;
+}
+
+nav li{
+    flex: 1 1 0;
+}
+
+
+/* position sub-menu or drop down*/
+nav ul>li ul{
+    position: static;
+    margin-top: 0;
+    margin-left: 0;
+    display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*special hover to display the drop-down*/
+nav>ul>li:hover>ul{
+    display: block;
+}
+
+nav a:hover, nav a:focus {
+    background-color: lavenderblush;
+}
