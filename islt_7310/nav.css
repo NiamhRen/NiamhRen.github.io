@@ -3,7 +3,7 @@
    }
    ul li {
     position: relative;
-    display: inline;
+    display: flex;
     border: none;
     text-decoration: underline;
     text-align: center;
