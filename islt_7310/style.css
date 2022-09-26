@@ -4,12 +4,14 @@ p.indent{
     text-indent: 30px;
 }
 
+/*about page*/
 .style-body {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 33.3% 33.3% 33.3%;
-    /*background color*/
+    background-color: #8d9db6;
+    color: #0c343d;
     /*color*/
 }
 
@@ -35,3 +37,4 @@ p.indent{
     grid-column: 1 / span 3;
     grid-row: 3;
 }
+
