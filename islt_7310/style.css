@@ -4,6 +4,7 @@ p.indent{
     text-indent: 30px;
 }
 
+
 /*about page*/
 .style-body {
     display: grid;
@@ -40,9 +41,9 @@ p.indent{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
     background-color: #8d9db6;
     color: #0c343d;
+    padding-bottom: 20px;
 }
 .box {
     border-radius: 5px;
