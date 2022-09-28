@@ -4,6 +4,12 @@ p.indent{
     text-indent: 30px;
 }
 
+.top-header {
+    width: 100%;
+    max-width: 850px;
+    font: 50pt "Noto Serif", black;
+}
+
 /*about page*/
 .style-body {
     display: grid;
