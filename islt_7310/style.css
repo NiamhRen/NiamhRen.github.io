@@ -4,7 +4,6 @@ p.indent{
     text-indent: 30px;
 }
 
-
 /*about page*/
 .style-body {
     display: grid;
@@ -134,3 +133,4 @@ hr.rounded {
     grid-column: 1;
     grid-row: 3;
 }
+
