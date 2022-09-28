@@ -1,13 +1,12 @@
-.h1 {color: rgb(51,51,102)}
+.h1 {color: rgb(51,51,102); font-family: 'Noto Serif';font-size: 22px; }
 
 p.indent{
     text-indent: 30px;
 }
 
-.top-header {
-    width: 100%;
-    max-width: 850px;
-    font: 50pt "Noto Serif", black;
+@font-face {
+    font-family: Noto Serif;
+    src: url("/Noto_Serif/NotoSerif-Regular.ttf");
 }
 
 /*about page*/
@@ -138,5 +137,45 @@ hr.rounded {
 .m{
     grid-column: 1;
     grid-row: 3;
+}
+
+/*print stylesheet*/
+@media print {
+    *{
+        background: transparent !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    .main-nav,
+    .sidebar,
+    .comments,
+    .main-footer,
+    img {
+        display: none
+    }
+    .main-header {
+        margin-bottom: 0;
+        border: none;
+        text-align: center;
+    }
+    a[href^="http://"] ::after {
+        content: " [" attr(href)"]";
+        color: blue;
+    }
+    @page {
+        margin: .5cm;
+    }
+    @page :first {
+        margin-top: 2cm;
+    }
+    h2, ul {
+        page-break-after: avoid;
+    }
+    p, ul {
+        orphans: 3;
+        widows: 3;
+        font-size: 11pt;
+    }
 }
 
