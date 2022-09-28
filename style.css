@@ -1,4 +1,4 @@
-.h1 {color: rgb(51,51,102); font-family: 'Noto Serif';font-size: 22px; }
+h1 {color: rgb(51,51,102); font-family: 'Noto Serif';font-size: 22px; }
 
 p.indent{
     text-indent: 30px;
@@ -6,7 +6,7 @@ p.indent{
 
 @font-face {
     font-family: Noto Serif;
-    src: url("/Noto_Serif/NotoSerif-Regular.ttf");
+    src: url("https://niamhren.github.io/islt_7310/Noto_Serif/NotoSerif-Regular.ttf");
 }
 
 /*about page*/
