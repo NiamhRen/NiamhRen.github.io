@@ -1,4 +1,4 @@
-h1 {color: rgb(51,51,102); font-family: 'Noto Serif';font-size: 22px; }
+h1 {color: black; font-family: 'Noto Serif';font-size: 22px; }
 
 p.indent{
     text-indent: 30px;
@@ -108,36 +108,46 @@ hr.rounded {
     grid-row: 2;
 }
 
-/*reflection*/
-.style-projects {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 100%;
-    grid-template-rows: 33.3% 33.3% 33.3%;
-    background-color: #8d9db6;
-    color: #0c343d;
+/*projects*/
+body {
+    font-family: Noto Serif;
+    src: url("https://niamhren.github.io/islt_7310/Noto_Serif/NotoSerif-Regular.ttf");
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+.accordion {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none;
+}
+.accordion-header {
+    display: block;
+    padding: 15px 20px;
+    background: #8d9db6 ;
+    color: #0c343d ;
+    text-decoration-style: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .1);
+}
+.accordion-content p{
+    margin: 20px;
+}
+.accordion-content {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 
+    400ms ease;
+    transition: height 400ms ease;
+}
+.accordion-content target{
+    height: 150px;
+    overflow-y: scroll;
 }
 
-.box {
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 12pt;
-}
-
-.k{
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.l{
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.m{
-    grid-column: 1;
-    grid-row: 3;
-}
 
 /*print stylesheet*/
 @media print {
