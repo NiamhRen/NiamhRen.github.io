@@ -108,42 +108,34 @@ hr.rounded {
     grid-row: 2;
 }
 
-/*projects*/
-.container {
-    width: 100%;
-    max-width: 400px;
+/* projects */
+.style-projects {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+    background-color: #8d9db6;
+    color: #0c343d;
+    padding-bottom: 20px;
+}
+.box {
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 12pt;
 }
 
-.accordion {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+.k{
+    grid-column: 1;
+    grid-row: 1;
 }
 
-.accordion-header {
-    display: block;
-    padding: 15px 20px;
-    background: #8d9db6 ;
-    color: #0c343d ;
-    text-decoration-style: none;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, .1);
-    margin-bottom: 5px;
+.l{
+    grid-column: 1;
+    grid-row: 2;
 }
-.accordion-content p{
-    margin:20px;
-}
-.accordion-content {
-    height: 0;
-    overflow: hidden;
-    -webkit-transition:height 400ms ease;
-    transition:height 400ms ease;
-}
-.accordion-content:target{
-    height: 150px;
-    overflow-y:scroll;
+
+.m{
+    grid-column: 1;
+    grid-row: 3;
 }
 
 
