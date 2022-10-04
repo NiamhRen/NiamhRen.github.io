@@ -214,3 +214,14 @@ footer{
 .phone:hover{
     transform:scale(3);
 }
+
+/*table on about page*/
+table, th, td {
+    border: 1px solid black
+}
+@media screen and(max-width: 480px) {
+    .table-scroller {
+        overflow-x:auto;
+        width:320px;
+    }
+}
