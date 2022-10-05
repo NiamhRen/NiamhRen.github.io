@@ -225,3 +225,9 @@ table, th, td {
         width:320px;
     }
 }
+
+/*contact*/
+.style-contact{
+    background-color: #0c343d;
+    color: #f1e3dd;
+}
